@@ -28,7 +28,7 @@ public class StudentEntity {
         this.department = department;
     }
 
-    public int getStudentId()
+    public String getStudentId()
     {
         return studentId;
     }

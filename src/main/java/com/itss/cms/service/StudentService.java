@@ -81,14 +81,13 @@ public class StudentService {
         ArrayList<StudentEntity> studentsInfo = (ArrayList<StudentEntity>) studentRepository.findAll();
         ArrayList<StudentResponse> studentResponses = new ArrayList<>();
         for (int i = 0; i < studentsInfo.size(); i++) {
-            int k = 2;
+
             StudentEntity studentEntity = studentsInfo.get(i);
             StudentResponse studentResponse = new StudentResponse();
             studentResponse.setStudentName(studentEntity.getStudentName());
             studentResponse.setStudentAge(studentEntity.getStudentAge());
             studentResponses.add(studentResponse);
-            data.put("k", new Object[]{k, studentEntity.getStudentName(), studentEntity.getStudentAge()});
-            k = k + 1;
+            data.put(studentEntity.getStudentId(), new Object[]{studentEntity.getStudentId(), studentEntity.getStudentName(), studentEntity.getStudentAge()});
         }
         Set<String> keyset = data.keySet();
         int rownum = 0;

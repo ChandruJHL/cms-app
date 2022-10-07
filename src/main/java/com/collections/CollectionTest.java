@@ -5,7 +5,7 @@ import java.util.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-// new line added 
+
 public class CollectionTest {
 
     public static void main(String args[]){
@@ -34,7 +34,35 @@ public class CollectionTest {
             System.out.println(str1);
         }
 
+/*
+        HashMap<Integer,String> hashMap=new HashMap<Integer,String>();
+        System.out.println("Initial list of elements: "+hashMap);
+        hashMap.put(100,"Amit");
+        hashMap.put(101,"Vijay");
+        hashMap.put(102,"Rahul");
+        hashMap.put(100,"Arun");
+        System.out.println(hashMap);
 
+
+        System.out.println("After invoking put() method ");
+        hashMap.get(100);
+        hashMap.get(101);
+        hashMap.get(102);
+        System.out.print(hashMap);
+
+        System.out.println();
+        Map<Integer,String> maptest = new Hashtable<>();
+        maptest.put(20,"Ramu");
+        maptest.put(30,"Rahim");
+        maptest.put(25,"Robert");
+
+        Map<Integer,String> map= new LinkedHashMap<>();
+        map.put(1,"Mallesh");
+        map.put(2,"Siddesh");
+        map.put(3,"Chandru");
+        map.putAll(maptest);
+        System.out.println(map);
+*/
         ArrayList<Integer>  list1 = new ArrayList<Integer>();
         list1.add(10);
         list1.add(20);
